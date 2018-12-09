@@ -1,0 +1,22 @@
+# Compilateur
+CC=gcc
+
+# Options du compilateur 
+CFLAGS=-O2 -Wall `sdl-config --cflags`
+
+# Option du linker
+LIBS=`sdl-config --libs` -lm -lSDL_ttf -lSDL_net
+
+DLL_DIR=$(USB_DRIVE)/Systeme/DLLs
+
+# Cible generique
+%: graphics.o %.c
+	$(CC) $(CFLAGS) graphics.o $@.c -o $@ $(LIBS)
+
+graphics.o: graphics.c graphics.h
+	$(CC) $(CFLAGS) -c graphics.c
+
+clean:
+	rm -f *core
+	rm -f *.o
+	rm -f *.exe

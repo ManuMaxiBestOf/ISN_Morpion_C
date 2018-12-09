@@ -1,0 +1,38 @@
+# Compilateur
+CC=gcc
+
+# Options du compilateur 
+CFLAGS=-O2 -Wall `sdl-config --cflags`
+
+# Option du linker
+#LIBS=`sdl-config --libs` -lm -lSDL_ttf
+LIBS=`sdl-config --static-libs` -lm
+
+DLL_DIR=$(USB_DRIVE)/Systeme/DLLs
+
+# Cible generique
+%: graphics.o %.c
+	$(CC) $(CFLAGS) graphics.o $@.c -o $@ $(LIBS)
+
+graphics.o: graphics.c graphics.h
+	rm -f police.h
+	touch police.h
+	sdl-config --cflags
+#	if test -e /usr/include/SDL_ttf.h;      then echo "#define SDL_TTF_OK" > police.h; fi
+#	if test -e /usr/include/SDL/SDL_ttf.h;  then echo "#define SDL_TTF_OK" > police.h; fi
+#	if test -e /usr/local/include/SDL_ttf.h;     then echo "#define SDL_TTF_OK" > police.h; fi
+#	if test -e /usr/local/include/SDL/SDL_ttf.h; then echo "#define SDL_TTF_OK" > police.h; fi
+	$(CC) $(CFLAGS) -c graphics.c
+
+#sans_ttf:
+#	rm -f police.h
+#	touch police.h
+#	$(CC) $(CFLAGS) -c graphics.c
+#	$(CC) $(CFLAGS) graphics.o exemple.c -o exemple $(LIBS)
+#	./exemple
+
+clean:
+	rm -f *core
+	rm -f *.o
+	rm -f police.h
+	rm -f *.exe

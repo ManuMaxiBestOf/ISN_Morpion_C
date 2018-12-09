@@ -1,0 +1,51 @@
+http://prdownloads.sourceforge.net/mingw/libstdc++-4.6.1-2-mingw32-dll-6.tar.lzma?download
+221.86 kB / 221.86 kB   |================================================| 100%
+http://prdownloads.sourceforge.net/mingw/libgfortran-4.6.1-2-mingw32-dll-3.tar.lzma?download
+242.96 kB / 242.96 kB   |================================================| 100%
+http://prdownloads.sourceforge.net/mingw/gcc-c++-4.6.1-2-mingw32-bin.tar.lzma?download
+5.64 MB / 5.64 MB       |================================================| 100%
+http://prdownloads.sourceforge.net/mingw/gcc-fortran-4.6.1-2-mingw32-bin.tar.lzma?download
+4.51 MB / 4.51 MB       |================================================| 100%
+http://prdownloads.sourceforge.net/mingw/libobjc-4.6.1-2-mingw32-dll-3.tar.lzma?download
+57.95 kB / 57.95 kB     |================================================| 100%
+http://prdownloads.sourceforge.net/mingw/gcc-objc-4.6.1-2-mingw32-bin.tar.lzma?download
+7.18 MB / 7.18 MB       |================================================| 100%
+install: mingw-get-0.4-mingw32-alpha-1-bin.tar.xz
+ installing mingw-get-0.4-mingw32-alpha-1-bin.tar.xz
+mingw-get.exe: *** ERROR *** package mingw-get-0.4-mingw32-alpha-1-bin.tar.xz is already installed
+install: mingw-get-0.4-mingw32-alpha-1-lic.tar.xz
+ installing mingw-get-0.4-mingw32-alpha-1-lic.tar.xz
+mingw-get.exe: *** ERROR *** package mingw-get-0.4-mingw32-alpha-1-lic.tar.xz is already installed
+install: pkginfo-0.4-mingw32-alpha-1-bin.tar.xz
+ installing pkginfo-0.4-mingw32-alpha-1-bin.tar.xz
+mingw-get.exe: *** ERROR *** package pkginfo-0.4-mingw32-alpha-1-bin.tar.xz is already installed
+install: gcc-4.6.1-2-mingw32-lic.tar.lzma
+ installing gcc-4.6.1-2-mingw32-lic.tar.lzma
+mingw-get.exe: *** ERROR *** package gcc-4.6.1-2-mingw32-lic.tar.lzma is already installed
+install: libstdc++-4.6.1-2-mingw32-dll-6.tar.lzma
+ installing libstdc++-4.6.1-2-mingw32-dll-6.tar.lzma
+install: libgfortran-4.6.1-2-mingw32-dll-3.tar.lzma
+ installing libgfortran-4.6.1-2-mingw32-dll-3.tar.lzma
+install: gcc-core-4.6.1-2-mingw32-bin.tar.lzma
+ installing gcc-core-4.6.1-2-mingw32-bin.tar.lzma
+mingw-get.exe: *** ERROR *** package gcc-core-4.6.1-2-mingw32-bin.tar.lzma is already installed
+install: mingw32-base-2011060500-mingw32-bin.meta
+ installing mingw32-base-2011060500-mingw32-bin.meta
+mingw-get.exe: *** ERROR *** package mingw32-base-2011060500-mingw32-bin.meta is already installed
+install: gcc-4.6.1-2-mingw32-doc.tar.lzma
+ installing gcc-4.6.1-2-mingw32-doc.tar.lzma
+mingw-get.exe: *** ERROR *** package gcc-4.6.1-2-mingw32-doc.tar.lzma is already installed
+install: gcc-4.6.1-2-mingw32-lang.tar.lzma
+ installing gcc-4.6.1-2-mingw32-lang.tar.lzma
+mingw-get.exe: *** ERROR *** package gcc-4.6.1-2-mingw32-lang.tar.lzma is already installed
+install: gcc-c++-4.6.1-2-mingw32-bin.tar.lzma
+ installing gcc-c++-4.6.1-2-mingw32-bin.tar.lzma
+install: gcc-fortran-4.6.1-2-mingw32-bin.tar.lzma
+ installing gcc-fortran-4.6.1-2-mingw32-bin.tar.lzma
+install: libobjc-4.6.1-2-mingw32-dll-3.tar.lzma
+ installing libobjc-4.6.1-2-mingw32-dll-3.tar.lzma
+install: gcc-objc-4.6.1-2-mingw32-bin.tar.lzma
+ installing gcc-objc-4.6.1-2-mingw32-bin.tar.lzma
+install: msys-base-2011060500-msys-bin.meta
+ installing msys-base-2011060500-msys-bin.meta
+mingw-get.exe: *** ERROR *** package msys-base-2011060500-msys-bin.meta is already installed

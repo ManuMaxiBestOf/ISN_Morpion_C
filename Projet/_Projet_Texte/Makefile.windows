@@ -1,0 +1,17 @@
+# Compilateur
+CC=gcc
+
+# Options du compilateur 
+CFLAGS=-O2 -Wall
+
+# Option du linker
+LIBS=-lm
+
+#Cible generique
+%: %.c
+	$(CC) $(CFLAGS) $@.c -o $@ $(LIBS)
+
+clean:
+	rm -f *core
+	rm -f *.o
+	rm -f *.exe

@@ -1,0 +1,29 @@
+Informations sur l'emploi de l'extension de graphics.h contenant les fonctions réseaux
+--------------------------------------------------------------------------------------
+
+B. Charbord. 10/04/2013
+
+
+L'extention de graphics.h por intégrer des communications réseaux repose sur la librairie SDL_Net.
+
+C'est une sous librairie de SDL, mais non présente dans le package de base.
+
+
+Il faut donc ajouter les fichier suivants:
+
+ - pour le compilateur: 
+	le fichier SDL_net.h est à placer dans /systeme/MinGW/include/SDL
+
+ - pour le linker: 
+	* le fichier SDL_net.lib est à placer dans /systeme/MinGW/lib
+        * il faut préciser le nom de la librairie: l'instruction -lSDL_net doit etre mis dans 
+	  la ligne de gcc. On vérifie donc que'elle est présente à la fin de la ligne options 
+	  du linker du makefile.windows.
+
+ - pour l'executable (le fichier .exe créé): 
+	il faut ajouter le fichier SDL_net.dll dans le même répertoire que l'exe.
+
+
+Remarquons pour finir que cette extension gère le SDL_ttf. On vérifiera donc que les fichiers
+SDL_ttf.h, SDL_ttf.lib sont dans les répertoires ci-dessus, et que l'option -lSDL_ttf est bien
+présente dans la ligne options du linker du makefile.windows
